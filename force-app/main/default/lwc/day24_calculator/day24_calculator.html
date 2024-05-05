@@ -1,0 +1,42 @@
+<template>
+    <div>
+        <lightning-input label="Enter First Number"
+                         placeholder="Enter First Number"
+                         name="fNumber"
+                         value={firstNumber}
+                         onchange={handleOnChange}>
+        </lightning-input>
+        <lightning-input label="Enter Second Number"
+                         placeholder="Enter Second Number"
+                         name="sNumber"
+                         value={secondNumber}
+                         onchange={handleOnChange}>            
+        </lightning-input>
+        <lightning-input label="Operation Result"
+                         placeholder="Operation Result"
+                         name="result"
+                         value={operationResult}>            
+        </lightning-input> <br/><br/>
+
+        <lightning-button label="Addition"
+                          variant="brand"
+                          onclick={handleAddition}>            
+        </lightning-button> &nbsp;
+        <lightning-button label="Subtraction"
+                          variant="brand"
+                          onclick={handleSubtraction}>            
+        </lightning-button> &nbsp;
+        <lightning-button label="Multiply"
+                          variant="brand"
+                          onclick={handleMultiply}>            
+        </lightning-button> &nbsp;
+        <lightning-button label="Division"
+                          variant="brand"
+                          onclick={handleDivision}>            
+        </lightning-button> &nbsp;
+        <lightning-button label="Modulus"
+                          variant="brand"
+                          onclick={handleModulus}>            
+        </lightning-button>
+    </div>
+</template>

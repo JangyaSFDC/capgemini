@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="create Account" icon-name="Standard:account">
+        <lightning-layout>
+            <lightning-layout-item size="6" padding="around-small">
+                <lightning-card title="New Account" icon-name="Standard:account">
+
+                    <lightning-input label="enter contact name" name="name" onchange={onNameChange}></lightning-input>
+                    <lightning-input label="enter contact number" name="phone" onchange={onPhoneChange}></lightning-input>
+                    <lightning-input label="enter contact website" name="website" onchange={onWebsiteChange}></lightning-input>
+                    <lightning-input label="enter contact email" name="email" onchange={onEmailChange}></lightning-input>
+                    <br/><br/>
+                    <lightning-button label="Save" onclick={onSaveMethod}></lightning-button>
+                </lightning-card>
+
+            </lightning-layout-item>
+        </lightning-layout>
+
+    </lightning-card>
+</template>

@@ -1,0 +1,18 @@
+<template>
+    
+        
+        <div>
+            <lightning-input label="Enter searchbox" placeholder="Enter text" onchange={typeMe} value={textBox1}></lightning-input>
+        <lightning-button label="Search Records" variant="brand" onclick={searchAccountRecords}></lightning-button>
+    
+        <template if:true={searchResultList}>
+            <template for:each={searchResultList} for:item="acc">
+                <lightning-card key={acc.Id} icon-name="standard:account">
+                    <p>{acc.Name}</p>
+                </lightning-card>
+            </template>
+        </template>
+        </div>
+        
+</template>
+

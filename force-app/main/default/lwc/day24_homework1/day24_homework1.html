@@ -1,0 +1,36 @@
+<template>
+    <div>
+        <lightning-input label="Enter Product Quantity"
+        placeholder="Enter Product Quantity"
+        name="productQuantity"
+        value={productquantity}
+        onchange={handleOnChange}>
+</lightning-input>
+<lightning-input label="Enter Unit Price"
+        placeholder="Enter Unit Price"
+        name="unitPrice"
+        value={unitprice}
+        onchange={handleOnChange}>            
+</lightning-input>
+<lightning-input label="Enter discount"
+        placeholder="Enter Discount"
+        name="discount"
+        value={discountAmt}
+        onchange={handleOnChange}>            
+</lightning-input>
+<lightning-input label="Net Bill Amount"
+        placeholder="Net Bill Amount"
+        name="result"
+        value={operationResult}>            
+</lightning-input> <br/><br/>
+
+<lightning-button label="calculateBill"
+         variant="brand"
+         onclick={calculateBill}>            
+</lightning-button>
+<lightning-button label="clear"
+         variant="brand"
+         onclick={clear}>            
+</lightning-button>
+</div>
+</template>

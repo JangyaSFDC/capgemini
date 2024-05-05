@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Accounts Manager" icon-name="standard:account">
+        <lightning-record-form
+                                record-id={recordId} 
+                                object-api-name={objectApiName} 
+                                layout-type="Full"
+			        fields={fieldArr}
+                                columns="2"  
+                                onsuccess={handleOnSuccess} >
+        </lightning-record-form>
+    </lightning-card>
+</template>

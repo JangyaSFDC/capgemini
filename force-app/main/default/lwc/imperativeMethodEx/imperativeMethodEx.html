@@ -1,0 +1,9 @@
+<template>
+    <lightning-button label="click me" onclick={clickme}></lightning-button>
+
+    <template for:each={allOppRecords} for:item="opp">
+        <lightning-card key={opp.Id} icon-name="standard:opportunity">
+            <p>{opp.Name}</p>
+        </lightning-card>
+    </template>
+</template>
